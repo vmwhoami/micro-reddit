@@ -5,7 +5,8 @@ class UsersController < ApplicationController
 
 
   def create
-    @user = User.new(user_params)
+    @user = User.new(username: params[:username], email:params[:email], password: params[:password])
+    # @user = User.new(user_params)
     # debugger
     if @user.save
       flash[:success] = "User #{@user.username} has been saved"

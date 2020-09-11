@@ -3,6 +3,6 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: { case_sensitive: false }, length: {maximum: 50}  
   validates :password, presence: true, length: {maximum: 50}  
   
-  has_many :posts
-  has_many :comments
+  has_many :posts 
+  has_many :comments 
 end

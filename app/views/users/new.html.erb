@@ -1,15 +1,35 @@
 <h1>Hello from Users</h1>
 
+<%= render 'errors' %>
 
+<%# 
 <form action="/users" method="post" accept-charset="utf-8">
   <label for="username">Username:</label>
   <input type="text" id="username" name="user[username]"><br><br>
   <label for="email">Email:</label>
   <input type="email" id="email" name="user[email]"><br><br>
     <label for="password">Password:</label>
-  <input type="password" id="password" name="user[password]"><br><br>
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <input type="submit" value="Submit">
-</form>
+  <input type="password" id="password" name="user[password]"><br><br> %>
+  <%# <input type="hidden" name="authenticity_token" value="form_authenticity_token"> %>
+  <%# <input type="submit" value="Submit">
+</form> %>
 
-form_with
+<%# <ul class="unordered">
+
+<%# form_tag('/users',method: 'post') do %>
+<%# <li> %>
+  <%# label_tag(:username, "Userame") %>
+  <%# text_field_tag(:username) %>
+<%# </li>
+<li> %>
+  <%# label_tag(:email, "Email" , class: 'email') %>
+  <%# email_field_tag(:email) %>
+<%# </li>
+<li> %>
+  <%# label_tag(:password, "Password") %>
+  <%# password_field_tag(:password) %>
+<%# </li> %>
+  
+  <%# submit_tag("Send", class: 'button') %>
+<%# end %>
+<%# <ul> %>
